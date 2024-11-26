@@ -1,6 +1,11 @@
+<script setup>
+
+
+
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <Navbar />
+  <Hero />
+  <Hard />
 </template>
