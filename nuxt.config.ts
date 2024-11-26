@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       ],
       htmlAttrs: {
         //daisyui default theme
-        'data-theme': 'emerald',
+        'data-theme': 'dracula',
       },
     }
   },

@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <NuxtPage />
+  <Form form="Sign up"/>
 </template>

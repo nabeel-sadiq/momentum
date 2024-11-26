@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="navbar bg-base-100 px-6 py-4">
+  <div class="navbar bg-base-100 z-50 px-6 py-4 fixed w-full">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -15,7 +15,7 @@
           <li><a>Github</a></li>
         </ul>
       </div>
-      <a href="/" class="btn btn-ghost hidden sm:inline-flex text-xl">Momentum</a>
+      <a href="" class="btn btn-ghost hidden sm:inline-flex text-xl">Momentum</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -25,8 +25,8 @@
       </ul>
     </div>
     <div class="navbar-end gap-3">
-      <a class="btn btn-ghost">Login</a>
-      <a class="btn btn-accent">Signup</a>
+      <a href="/login" class="btn btn-ghost">Login</a>
+      <a href="/signup" class="btn btn-accent">Signup</a>
     </div>
   </div>
 </template>
