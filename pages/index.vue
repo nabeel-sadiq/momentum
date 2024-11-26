@@ -8,5 +8,9 @@
     <Hero />
   </div>
   <Hard />
+  <Motto />
+  <Solution />
+  <Solution />
+  <Solution />
   <Solution />
 </template>

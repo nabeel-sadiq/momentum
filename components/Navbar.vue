@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+</script>
+
 
 <template>
   <div class="navbar bg-base-100 z-50 px-6 py-4 fixed w-full">
