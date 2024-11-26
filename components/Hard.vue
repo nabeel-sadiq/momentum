@@ -6,30 +6,17 @@ onMounted(async () => {
   const card1 = document.querySelector(".card-animation1");
   const card3 = document.querySelector(".card-animation3");
 
-  animate(card1, { skew: 10 });
-  animate(card3, { skew: -10 });
+  const animate1 = animate(card1, { skew: 10 });
+  const animate3 = animate(card3, { skew: -10 });
 
-  card1.addEventListener("mouseover", () => {
-    animate(card1, { skew: 0 }, { duration: 0.2, easing: "linear" }); // Animate back to skew 0
-  });
-
-  card1.addEventListener("mouseout", () => {
-    animate(card1, { skew: 10 }, { duration: 0.2, easing: "linear" }); // Animate back to skew 10
-  });
-
-  card3.addEventListener("mouseover", () => {
-    animate(card3, { skew: 0 }, { duration: 0.2, easing: "linear" }); // Animate back to skew 0
-  });
-
-  card3.addEventListener("mouseout", () => {
-    animate(card3, { skew: -10 }, { duration: 0.2, easing: "linear" }); // Animate back to skew -10
-  });
+  scroll(animate1);
+  scroll(animate3);
 })
 </script>
 
 
 <template>
-  <div class="flex justify-center items-center px-4">
+  <div class="flex justify-center items-center px-4 pt-20">
     <h1 class="font-bold md:text-3xl text-2xl text-center">The Problem</h1>
   </div>
   <div class="flex md:flex-row flex-col flex-wrap justify-center items-center md:gap-10 gap-6 py-10 md:px-10 px-3">

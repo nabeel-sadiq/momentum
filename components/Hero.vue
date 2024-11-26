@@ -31,16 +31,69 @@ onMounted(() => {
 
 
 <template>
-  <div class="hero bg-base-100 py-36 text-balance">
-    <div class="hero-content text-center">
-      <div class="max-w-md">
-        <h1 class="sm:text-6xl text-5xl font-bold">Momentum</h1>
-        <p class="py-6 text-lg text-base-content/80">
-          Momentum is a <span class="underline underline-offset-2 decoration-accent">100% free</span>, open-source habit
-          tracker that helps you stay consistent, motivated, and achieve your goals daily.
-        </p>
-        <button class="btn btn-accent">Get Productive</button>
+  <div class="container">
+
+    <div class="absolute z-40 hero bg-base-100/30 py-36 text-balance">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="sm:text-6xl text-5xl font-bold">Momentum</h1>
+          <p class="py-6 text-lg text-base-content/80">
+            Momentum is a 100% free, open-source habit
+            tracker that helps you stay consistent, motivated, and achieve your goals daily.
+          </p>
+          <button class="btn btn-accent">Get Productive</button>
+        </div>
       </div>
+    </div>
+
+    <!-- bg -->
+    <div class="grid">
+      <div class="grid-fade"></div>
+      <div class="grid-lines"></div>
     </div>
   </div>
 </template>
+
+<style scoped>
+body {
+  background-color: #0e1416;
+}
+
+.grid {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  perspective: 450px;
+  /* 600px * 0.75 */
+}
+
+.grid-fade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: radial-gradient(ellipse at 50% 50%, rgba(14, 20, 22, 0) 0%, rgba(14, 20, 22, 1) 80%);
+}
+
+.grid-lines {
+  width: 100%;
+  height: 200%;
+  background-image:
+    linear-gradient(to right, #DEA05D 1px, transparent 0),
+    linear-gradient(to bottom, #DEA05D 1px, transparent 0);
+  background-size: 45px 30px;
+  background-repeat: repeat;
+  transform-origin: 100% 0 0;
+  animation: play 15s linear infinite;
+}
+
+@keyframes play {
+  0% {
+    transform: rotateX(45deg) translateY(-50%);
+  }
+
+  100% {
+    transform: rotateX(45deg) translateY(0);
+  }
+}
+</style>

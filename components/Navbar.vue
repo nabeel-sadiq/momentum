@@ -3,7 +3,7 @@
 
 
 <template>
-  <div class="navbar bg-base-100 z-50 px-6 py-4 fixed w-full">
+  <div class="navbar bg-base-200 z-50 px-6 py-4 fixed w-full">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
